@@ -25,7 +25,9 @@ export default function Home() {
           <div className='form-group'>
             <label>Email </label>
             <input type='email' />
+            
           </div>
+          <input type='submit' />
         </div>
         
       </form>
