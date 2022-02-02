@@ -1,15 +1,13 @@
 html,
 body {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
   // align-items: center;
+  height: 100vh;
   padding: 0;
   margin: 0;
   font-family: -apple-system, 'Cormorant Garamond', serif;
-  overflow-y: hidden;
-  @media (max-width: 390){
-    $smWidth: 40%
-  }
+  overflow: hidden;  
 }
 
 a {
@@ -22,4 +20,7 @@ a {
 };
 
 $inputBackgroundColor: rgba(255,255,255,.2);
-$titleWeight: 2rem;
+$smWeight: 1.7rem;
+$mdWeight: 2rem;
+$lgWeight: 3rem;
+
