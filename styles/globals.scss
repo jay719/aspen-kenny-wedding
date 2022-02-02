@@ -1,8 +1,15 @@
 html,
 body {
+  display: flex;
+  justify-content: center;
+  // align-items: center;
   padding: 0;
   margin: 0;
   font-family: -apple-system, 'Cormorant Garamond', serif;
+  overflow-y: hidden;
+  @media (max-width: 390){
+    $smWidth: 40%
+  }
 }
 
 a {

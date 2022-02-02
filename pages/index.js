@@ -8,7 +8,6 @@ export default function Home() {
         <title>{'A&K Wedding'}</title>
         <link rel='icon' href='../images/wedding-icon.jpeg' />
       </Head>
-
       <h1>RSVP</h1>
       <p id='sub-title'>Aspen and Kenneth Wedding 2022</p>
       <div className='contact-conatiner'>
