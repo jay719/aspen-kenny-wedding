@@ -27,7 +27,10 @@ export default function Home() {
             <input type='email' />
             
           </div>
-          <input type='submit' />
+          <div className='form-group'>
+            <input type='submit' />
+            
+          </div>
         </div>
         
       </form>
