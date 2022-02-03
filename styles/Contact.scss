@@ -1,5 +1,5 @@
-@import './globals.scss';
-body{
+@import "./globals.scss";
+body {
     background: grey;
     display: flex;
     flex-direction: column;
@@ -9,121 +9,125 @@ body{
     width: 100%;
     background-image: url(https://images.pexels.com/photos/4982188/pexels-photo-4982188.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
     background-size: cover;
-    
 
     h1 {
         color: white;
         text-align: center;
-        text-shadow: 1px 2px 4px rgba(0,0,0,0.6);
-
+        text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.6);
     }
-    p#sub-title{
-
+    p#sub-title {
         color: white;
         text-align: center;
-        
-        text-shadow: 1px 2px 4px rgba(0,0,0,0.6);
 
+        text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.6);
     }
-    .contact-conatiner{
+    .contact-conatiner {
         width: 100%;
         display: flex;
         justify-content: center;
         overflow: hidden;
-        border: 1px solid rgba(255,255,255,.2);
-        -webkit-box-shadow: 0px 10px 33px 0px rgba(0,0,0,0.55);
-        -moz-box-shadow: 0px 10px 33px 0px rgba(0,0,0,0.55);
-        box-shadow: 0px 10px 33px 0px rgba(0,0,0,0.55);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        -webkit-box-shadow: 0px 10px 33px 0px rgba(0, 0, 0, 0.55);
+        -moz-box-shadow: 0px 10px 33px 0px rgba(0, 0, 0, 0.55);
+        box-shadow: 0px 10px 33px 0px rgba(0, 0, 0, 0.55);
 
         backdrop-filter: blur(5px);
         border-radius: 15px;
         padding: 10px;
-        
     }
     form {
-        
-        .col{
+        .col {
             display: grid;
             column-gap: 10px;
             width: 100%;
             grid-template-columns: repeat(3, 1fr);
             // grid-auto-rows: 80px;
         }
-        .form-group{
-           display: flex;
+        #submit-fg {
+            display: flex;
+            justify-content: center;
+            input[type="submit"] {
+                // grid-column: 2;
+                font-size: 1.5rem;
+                // width: 60%;
+                margin-top: 1rem;
+            }
+        }
+        .form-group {
+            display: flex;
             align-items: center;
             flex-direction: column;
-            flex: 0 .5 100%;
-            padding: .5;
-            label{
-                
-                color:white;
+            flex: 0 0.5 100%;
+            padding: 0.5;
+            label {
+                color: white;
                 margin-bottom: 1rem;
-                text-shadow: 1px 2px 4px rgba(0,0,0,0.6);
+                text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.6);
                 font-weight: 1000;
             }
-            input[type=text]{
+            input[type="text"] {
                 border: none;
                 border-bottom: 1px solid#05f7ff;
                 padding: 10px;
                 font-size: 1.5rem;
                 background: $inputBackgroundColor;
-                &:focus{
-                    border:none;
+                &:focus {
+                    border: none;
                     outline: none;
                 }
             }
-            input[type=email]{
+            input[type="email"] {
                 border: none;
                 border-bottom: 1px solid#05f7ff;
                 padding: 10px;
                 font-size: 1.5rem;
                 background: $inputBackgroundColor;
-                &:focus{
-                    border:none;
+                &:focus {
+                    border: none;
                     outline: none;
                 }
-            }
-            input[type=submit]{
-                // grid-column: 2;
             }
         }
     }
-    @media  screen and (max-width: 1200px) {
-        h1{
+    @media screen and (max-width: 1200px) {
+        h1 {
+            font-size: $lgWeight;
+        }
+        p#sub-title {
+            font-size: $lgWeight;
+        }
+        #submit-fg {
+            grid-column: 2;
+        }
+        form .form-group {
+            label {
+                font-size: $smWeight;
+            }
+        }
+    }
+    @media screen and (max-width: 900px) {
+        h1 {
             font-size: $lgWeight;
         }
         p#sub-title {
             font-size: $mdWeight;
         }
-        form .form-group{
-            label{
-                font-size: $smWeight;
-            }
-        }
-    }
-    @media screen and (max-width: 700px) {
-        h1{
-            font-size: $mdWeight;
-        }
-        p#sub-title{
-            font-size: $mdWeight;
-        }
-      }
-      @media screen and (max-width: 500px) {
-        form{
-            .col{
+        form {
+            .col {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-            }
-            .form-group{
-                label{
-                    font-size: $mdWeight;
+                .form-group {
+                    label {
+                        font-size: $mdWeight;
+                    }
+                    *input {
+                        font-size: 0.5rem;
+                    }
                 }
             }
         }
     }
-      
-      
+    @media screen and (max-width: 500px) {
+    }
 }

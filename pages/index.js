@@ -8,8 +8,8 @@ export default function Home() {
         <title>{'A&K Wedding'}</title>
         <link rel='icon' href='../images/wedding-icon.jpeg' />
       </Head>
-      <h1>RSVP</h1>
-      <p id='sub-title'>Aspen and Kenneth Wedding 2022</p>
+      <h1>Aspen and Kenneth Wedding 2022</h1>
+      <p id='sub-title'>RSVP</p>
       <div className='contact-conatiner'>
       
       <form>
@@ -27,9 +27,8 @@ export default function Home() {
             <input type='email' />
             
           </div>
-          <div className='form-group'>
+          <div id='submit-fg'>
             <input type='submit' />
-            
           </div>
         </div>
         
